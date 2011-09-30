@@ -1,3 +1,4 @@
+/*global YUITest */
 /*
  * Augments the environment-specific CLI API with common functionality.
  */
@@ -32,11 +33,11 @@ YUITest.Util.mix(YUITest.CLI, {
             files   = [];  
             
         while(arg){
-            if (arg.indexOf("--") == 0){
+            if (arg.indexOf("--") === 0){
                 this.options[arg.substring(2)] = true;
                 
                 //get the next argument
-                if (arg == "--groups" || arg == "--format"){
+                if (arg === "--groups" || arg === "--format"){
                     this.options[arg.substring(2)] = args.shift();
                 }
             } else {

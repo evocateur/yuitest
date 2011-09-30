@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * Creates a new mock object.
  * @namespace YUITest
@@ -27,7 +28,7 @@ YUITest.Mock = function(template){
     //create stubs for all methods
     for (name in template){
         if (template.hasOwnProperty(name)){
-            if (typeof template[name] == "function"){
+            if (typeof template[name] === "function"){
                 mock[name] = function(name){
                     return function(){
                         YUITest.Assert.fail("Method " + name + "() was called but was not expected to be.");

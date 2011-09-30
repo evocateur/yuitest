@@ -1,4 +1,4 @@
-
+/*global YUITest */
 
 /**
  * Console output that uses TestFormat formats.

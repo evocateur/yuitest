@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * ComparisonFailure is subclass of Error that is thrown whenever
  * a comparison between two values fails. It provides mechanisms to retrieve
@@ -40,7 +41,7 @@ YUITest.ComparisonFailure = function (message, expected, actual){
 };
 
 //inherit from YUITest.AssertionError
-YUITest.ComparisonFailure.prototype = new YUITest.AssertionError;
+YUITest.ComparisonFailure.prototype = new YUITest.AssertionError();
 
 //restore constructor
 YUITest.ComparisonFailure.prototype.constructor = YUITest.ComparisonFailure;

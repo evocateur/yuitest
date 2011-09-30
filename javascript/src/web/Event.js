@@ -1,3 +1,4 @@
+/*global YUITest */
 
 /**
  * An object object containing methods to simulate browser events.

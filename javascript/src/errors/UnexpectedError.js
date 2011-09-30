@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * UnexpectedError is subclass of AssertionError that is thrown whenever
  * an error occurs within the course of a test and the test was not expected

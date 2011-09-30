@@ -1,3 +1,4 @@
+/*jslint node: true */
 /*!
  * Portions of this code incorporated from CSS Lint:
  * https://github.com/stubbornella/csslint
@@ -72,7 +73,7 @@ YUITest.CLI = {
                 var path = stack.concat([file]).join("/"),
                     stat = fs.statSync(path);
                 
-                if (file[0] == ".") {
+                if (file[0] === ".") {
                     return;
                 } else if (stat.isFile() && /\.js$/.test(file)){
                     files.push(path);

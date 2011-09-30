@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * UnexpectedValue is subclass of Error that is thrown whenever
  * a value was unexpected in its scope. This typically means that a test

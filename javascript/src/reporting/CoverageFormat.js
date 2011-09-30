@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * An object object containing coverage result formatting methods.
  * @namespace YUITest

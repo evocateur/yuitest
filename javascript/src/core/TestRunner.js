@@ -1,4 +1,5 @@
-    
+/*global YUITest */
+
     /**
      * Runs test suites and test cases, providing events to allowing for the
      * interpretation of test results.
@@ -596,7 +597,7 @@
                     segment.call(testCase, this._context);                    
                 
                     //if the test hasn't already failed and doesn't have any asserts...
-                    if(YUITest.Assert._getCount() == 0){
+                    if(YUITest.Assert._getCount() === 0){
                         throw new YUITest.AssertionError("Test has no asserts.");
                     }                                                        
                     //if it should fail, and it got here, then it's a fail because it didn't

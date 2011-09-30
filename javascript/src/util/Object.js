@@ -1,3 +1,4 @@
+/*global YUITest */
 
 /**
  * Object containing object helper methods.

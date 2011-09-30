@@ -1,4 +1,4 @@
-
+/*global YUITest */
 
 /**
  * Console output that mimics logger output from YUI Test for YUI 2/3.
@@ -15,6 +15,7 @@ YUITest.CLI.Logger = function(){
     function handleEvent(event){
     
         var message = "";
+        var messageType = ""; // unused, but let's not leak globals
         switch(event.type){
             case testRunner.BEGIN_EVENT:
                 message = "Testing began at " + (new Date()).toString() + ".";
@@ -82,7 +83,7 @@ YUITest.CLI.Logger = function(){
         cli.print(message + "\n");
     }
 
-    testRunner.subscribe(testRunner.BEGIN_EVENT, handleEvent)
+    testRunner.subscribe(testRunner.BEGIN_EVENT, handleEvent);
     testRunner.subscribe(testRunner.TEST_FAIL_EVENT, handleEvent);
     testRunner.subscribe(testRunner.TEST_PASS_EVENT, handleEvent);
     testRunner.subscribe(testRunner.TEST_IGNORE_EVENT, handleEvent);

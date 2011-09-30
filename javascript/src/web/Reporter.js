@@ -1,4 +1,5 @@
-    
+/*global YUITest */
+
     /**
      * An object capable of sending test results to a server.
      * @param {String} url The URL to submit the results to.

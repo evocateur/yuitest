@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * An object object containing test result formatting methods.
  * @namespace YUITest

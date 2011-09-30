@@ -1,3 +1,5 @@
+/*global YUITest, System, File, java, importPackage */
+/*jslint rhino: true */
 /*!
  * Portions of this code incorporated from CSS Lint:
  * https://github.com/stubbornella/csslint

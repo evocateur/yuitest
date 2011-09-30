@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * ShouldFail is subclass of AssertionError that is thrown whenever
  * a test was expected to fail but did not.

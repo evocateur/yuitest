@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * Test case containing various tests to run.
  * @param template An object containing any number of test methods, other methods,

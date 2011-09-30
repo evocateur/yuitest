@@ -1,3 +1,4 @@
+/*global YUITest */
 
 /**
  * Runs pages containing test suite definitions.

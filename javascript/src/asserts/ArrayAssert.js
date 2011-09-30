@@ -1,3 +1,4 @@
+/*global YUITest */
 
 /**
  * The ArrayAssert object provides functions to test JavaScript array objects

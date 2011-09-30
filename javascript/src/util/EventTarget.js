@@ -1,3 +1,4 @@
+/*global YUITest */
 
 /**
  * Simple custom event implementation.
@@ -35,7 +36,7 @@ YUITest.EventTarget.prototype = {
      * @method attach
      */
     attach: function(type, listener){
-        if (typeof this._handlers[type] == "undefined"){
+        if (typeof this._handlers[type] === "undefined"){
             this._handlers[type] = [];
         }
 
@@ -62,7 +63,7 @@ YUITest.EventTarget.prototype = {
      * @method fire
      */    
     fire: function(event){
-        if (typeof event == "string"){
+        if (typeof event === "string"){
             event = { type: event };
         }
         if (!event.target){

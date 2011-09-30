@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * ShouldError is subclass of Error that is thrown whenever
  * a test is expected to throw an error but doesn't.

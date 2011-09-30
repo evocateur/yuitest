@@ -1,3 +1,4 @@
+/*global YUITest */
 /**
  * Error is thrown whenever an assertion fails. It provides methods
  * to more easily get at error information and also provides a base class

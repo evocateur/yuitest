@@ -1,5 +1,5 @@
+/*global YUITest */
 
-    
 /**
  * A test suite that can contain a collection of TestCase and TestSuite objects.
  * @param {String||Object} data The name of the test suite or an object containing
